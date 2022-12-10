@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGARETOW&CO</title>
+    <title>SIGARETOWprod.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="./Magneto.ttf" rel="stylesheet">
+    <script>function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }</script>
     <style>
     h1 {font-size: 3em;
     color: rgb(0, 0, 0);
@@ -34,28 +39,14 @@
     .block img {
         width: 56px;
     }
-    </style>
-    
+    </style>   
 </head>
 <body>
   <header>
     <div class="layout">
-      <h1>Sigaretow Clothes</h1>
+      <h1> <a href="index.html">Sigartow Production</a></h1>
     <div class="image1">
       <a href="https://hommeplusless.com/"><img src="не менее крутая корзинка пипец.png"  style="width: 50px; height:a; " ></a>
-    </div>
-      <div class="dropdown">
-      <button class="dropbtn"> ☰ </button>
-      <div class="dropdown-content">
-        <a href="#">ОБУВЬ</a>
-        <a href="#">ОДЕЖДА</a>
-        <a href="#">ДРУГОЕ</a>
-        <a href="#">ПОИСК</a>
-        <a href="#">БРЕНДЫ</a>
-        <a href="#">ОБРАЗЫ</a>
-        <a href="#">НОВОСТИ</a>
-        <a href="#" id="sale">SALE</a>
-      </div>
   </header>
     <div class="marquee-container">
        <p class="marquee">
@@ -63,31 +54,21 @@
       </p>
    </div>
   </div>
-<!-- <div id="top">
-  <div class="logo"><img src="" alt=""></div>
-  <div class="menu-top">
-    <ul>
-      <a href="">ОБУВЬ</a></li>
-      <a href="">ОДЕЖДА</a></li>
-      <a href="">ДРУГОЕ</a></li>
-      <a href="">ПОИСК</a></li>
-      <a href="">БРЕНДЫ</a></li>
-      <a href="">ОБРАЗЫ</a></li>
-      <a href="">НОВОСТИ</a></li>
-      <a href="" id="sale">SALE</a></li>
-    </ul> 
-  </div> -->
-  <!-- <div class="menu-top menu-main">
-    <ul>
-      <li><a href="">INFO</a></li> 
-      <li><a href="">О МАГАЗИНЕ</a></li>
-      <li><a href="">АДРЕС</a></li>
-      <li><a href="https://vk.com/youhaveonetrybaby" target="_blank" rel="noopener noreferrer">ВК</a></li>
-      <li><a href="foreverandtwohearts">ИНСТ</a></li>
-      <li><a href="">НОМЕР</a></li>
-      <li><a href="mailto:artem.perfect2007@gmail.com">ПОЧТА</a></li>
-    </ul>
-  </div> 
-</body>
-</html> -->
-
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">ОДЕЖДА</a></li>
+        <li><a href="#">АКСЕССУАРЫ</a></li>
+        <li><a href="#">SALE </a></li>
+        <li><a href="#">О НАС</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+  
