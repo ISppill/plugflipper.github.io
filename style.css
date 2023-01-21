@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Magneto';
-    src: url('Magneto.ttf');
+    font-family: 'Times New Roman';
+    src: url('SilafejiraRegular.ttf');
 }
 body {
     margin: 0;
@@ -8,15 +8,19 @@ body {
 header { 
     height: 200px;
     background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 body {height: 20px;
     background-color: rgb(255, 255, 255)
 }
-header .layout h1 {
+body h1 {
     padding-top: 50px;
     padding-left: 100px;
     height: 10px;
-    font-family: 'Magneto', serif;
+    font-family: 'Silafejira', serif;
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid black;
 }
 .top {
     width: 100%;
@@ -57,8 +61,8 @@ header .layout h1 {
 .middle {
     display: flex;
 }
-.logo {width: 5px;
-    height: 5px;}
+/* .logo {width: 5px;
+    height: 5px;} */
 
 #sale {
     color: red;
@@ -68,8 +72,11 @@ header .layout h1 {
     align-items: center;
     background: #ff77e19d;
     overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
 }
 .marquee{
+    width: 100%;
     font-weight: bold;
     font-size: 20px;
     line-height: 9px;
@@ -77,10 +84,10 @@ header .layout h1 {
     padding: 2px 0;
     color: rgb(0, 0, 0);
     white-space: nowrap;
-    animation: marquee 61s infinite linear; /* notice the infinite */
+    animation: marquee 6s infinite linear;
 }
 .marquee:after{
-    content: "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST";
+    content: "СКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST";
 }
 @keyframes marquee{
     0% {
@@ -196,7 +203,6 @@ header .layout h1 {
  .product-wrap{
   width: 600px;
   padding: 2px;
-  /* border: solid #6e6e6e; */
   float: middle;
   position: relative;
   top: 20px;
@@ -315,13 +321,6 @@ header .layout h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #000000;
  }
-/* .basket { top: 0px;
-  right: 20px;
-  width: 45px;
-  height: 20px;
-  margin: 20px;;
-  cursor:auto
- } */
  .basket{
   position: fixed;
   right: 20px;
@@ -329,3 +328,4 @@ header .layout h1 {
   width: 80px;
   padding: 10px;
 }
+  
