@@ -72,26 +72,25 @@ h1 {
     margin: 0 auto;
 }
 .marquee{
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 9px;
-    font-family: sans-serif;
-    padding: 2px 0;
-    color: rgb(0, 0, 0);
-    white-space: nowrap;
-    animation: marquee 6s infinite linear;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 10px;
+  font-family: sans-serif;
+  padding: 2px 0;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  animation: marquee 30s infinite linear;
 }
 .marquee:after{
-    content: "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST"   "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST"   "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST""ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST"   "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST"   "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST";
+  content: "ㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤСКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST";
 }
 @keyframes marquee{
-    0% {
-        transform: translateX(0)
-    }
-    100% {
-        transform: translateX(-50%)
-    }
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-50%)
+  }
 }
   #menu {
     z-index: 2;
@@ -124,6 +123,7 @@ h1 {
 .nav {
   transition: 0.3s ease;
   display: none;
+  font-family:sans-serif;
 }
 
 .nav ul {
