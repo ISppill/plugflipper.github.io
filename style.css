@@ -5,20 +5,20 @@
 body {
     margin: 0;
     height: 20px;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 0, 0)
     'Roboto', sans-serif;
   }
 header { 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rgb(255, 255, 255);
+    background-color:#7C9AC0	;
     width: 100%;
 }
 h1 {
     font-size: 5em;
     letter-spacing: 8px;
-    color: rgb(255, 255, 255);
+    color: #7C9AC0	;
     font-family:'urbanoutline.ttf';
     margin: 0 auto;
     width: fit-content;
@@ -26,7 +26,7 @@ h1 {
 }
 .menu-top {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
 }
 .menu-top ul {
     list-style: none;
@@ -36,12 +36,12 @@ h1 {
     margin-left: 50px;
     width: 140px;
     height: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
 }
 .menu-top ul li:hover {
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    background-color: rgb(182, 180, 180);
+    color: rgb(255, 0, 0);
+    background-color: rgb(216, 3, 3);
 }
 .menu-main ul{
     font-weight: bold;
@@ -52,7 +52,7 @@ h1 {
     }
  a {
     text-decoration: none;
-    color: #ff97e8
+    color: #163154
 }
 .middle {
     display: flex;
@@ -61,12 +61,12 @@ h1 {
     height: 5px;}
 
 #sale {
-    color: red;
+    color: rgb(0, 0, 0);
 }
 .marquee-container{
     display: flex;
     align-items: center;
-    background: #ff9cea;
+    background-color: #376baab0		;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -77,7 +77,6 @@ h1 {
   line-height: 10px;
   font-family: sans-serif;
   padding: 2px 0;
-  color: rgb(0, 0, 0);
   white-space: nowrap;
   animation: marquee 30s infinite linear;
 }
@@ -137,7 +136,7 @@ h1 {
 
 .nav li a {
   font-weight: bold;
-  color: white;
+  color:#000000;
   font-size: 20px;
   text-decoration: none;
 }
@@ -157,7 +156,7 @@ h1 {
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #ff77e1, #e788d3);
+  background: radial-gradient(circle, #8EA4C0,#7C9AC0,#445F81);
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -201,6 +200,7 @@ margin: 0;
 }
 .product-image {
   position: relative;
+  margin: 0;
 }
 .product-image a {
   display: block;
@@ -235,7 +235,7 @@ margin: 0;
 }
 .actions a {
   background: #202020;
-  color: white;
+  color: #8EA4C0;
   display: block;
   height: 36px;
   line-height: 36px;
@@ -260,7 +260,7 @@ margin: 0;
   content: "\f002";
 }
 .actions a:hover {
-  background: #f78fdd;
+  background: #445F81;
 }
 .product-wrap:hover .add-to-cart {
   opacity: 1;
@@ -319,4 +319,69 @@ margin: 0;
 .basket img {
   width: 45px;
 }
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 100px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #1d3d65	;
+  height: 100%;
+  top: 0;
+  right: -200px;
+  transition: right.2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  color: #1d3d65;
+  background-color: #26538300;
+  padding: 7px;
+  position: fixed;
+  top: 15px;
+  right: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 45px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 8px;
   
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -8px;    
+} 
