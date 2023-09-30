@@ -5,6 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>- MAMOTA STORE</title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <div class="smart-basket__wrapper"></div>
+  <script src="./smartbasket/js/smartbasket.min.js"></script>
+  <script>
+      $(function () {
+         $('.smart-basket__wrapper').smbasket({
+          productElement: 'product__element',
+          buttonAddToBasket: 'product__add-to-cart-button',
+          countryCode: '+7',
+          smartBasketCurrency: '₽',
+          productQuantityWrapper: 'product__quantity',
+          productPrice: 'product__price-number',
+          productSize: 'product__size-element',
+          smartBasketMinArea: 'header__basket-min',
+          smartBasketMinText: 'Корзина:',
+          smartBasketMinIconPath: '/smartbasket/img/shopping-basket-wight.svg',
+          telIsRequired: false,
+          emailIsRequired: true,
+  });
+});
+  </script>
+    <link rel="stylesheet" href="/smartbasket/css/smartbasket.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +85,7 @@
   <p class="marquee">СКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRSTㅤㅤㅤㅤㅤ СКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST   СКИДКА 10% ПЕРВЫМ ПОКУПАТЕЛЯМ ПО ПРОМОКОДУ FIRST </p>
 </div>
 
-<div class="product-wrap">
+<!-- <div class="product-wrap">
   <div class="product-image">
     <a href=""><img src="ТИШКА МАМОТА.jpg" alt=""></a>
     <div class="shadow">
@@ -71,7 +96,7 @@
         </div>
         <div class="add-to-links">
           <div class="quikview">
-            <a class="quikview-button" href="#" title="Быстрый просмотр"><img src="eye.png" alt=""></a>
+            <a class="quikview-button" href="#" title="Быстрый просмотр"></a>
           </div>
         </div>
       </div>
@@ -102,9 +127,9 @@
     <h3>Tee FFM</h3>
     <div class="price">&#8381;3500</div>
   </div>
-</div>
+</div> -->
 
-<div class="product-wrap">
+<!-- <div class="product-wrap">
   <div class="product-image">
     <a href=""><img src="ТИШКА МАМОТА.jpg" alt=""></a>
     <div class="shadow"></div>
@@ -124,7 +149,25 @@
     <h3>Tee FFM</h3>
     <div class="price">&#8381;3500</div>
   </div>
-</div>
+</div> -->
+<button
+  class="product__add-to-cart-button"
+  data-sb-id-or-vendor-code="0032pz"
+  data-sb-product-name="Iphone 10"
+  data-sb-product-price="80000"
+  data-sb-product-quantity="1"
+  data-sb-product-img="http://sprosigorod.online/img/iphone-10.png">
+   <i class="fas fa-cart-plus"></i> В корзину
+</button>
+<div class="product__quantity"></div>
+<div class="product__size">
+            
+  <div class="product__size-element" data-sb-curent-price="320" data-sb-curent-size="32" data-sb-curent-id-or-vendor-code="0032pz">32 см</div>
+  <div class="product__size-element" data-sb-curent-price="260" data-sb-curent-size="26" data-sb-curent-id-or-vendor-code="0026pz">26 см</div>
+  <div class="product__size-element" data-sb-curent-price="220" data-sb-curent-size="22" data-sb-curent-id-or-vendor-code="0022pz">22 см</div>
+             
+ </div>
+ <div class="product__price"><span class="product__price-number">320</span> ₽</div>
 
 
 </body>
